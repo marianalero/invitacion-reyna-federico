@@ -125,29 +125,6 @@
 	};
 
 
-
-	// Page Nav
-	var clickMenu = function() {
-
-		$('a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
-		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
-
-		    if ( navbar.is(':visible')) {
-		    	navbar.removeClass('in');
-		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-qbootstrap-nav-toggle').removeClass('active');
-		    }
-
-		    event.preventDefault();
-		    return false;
-		});
-
-	};
-
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
 
@@ -278,7 +255,7 @@
 	
 	const formatNumber = n => ("0" + n).slice(-2);
 	// Set the date we're counting down to
-		var countDownDate = new Date("Oct 27, 2023 12:00:00").getTime();
+		var countDownDate = new Date("Oct 06, 2023 12:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -324,7 +301,7 @@
 		number = number.substring(30,32);
 		// number = number.slice(-6);
 		console.log("confirmando",name,number);
-		window.open("https://wa.me/+526624522542/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Isel%20y%20Fabian%20para%20"+number+" personas. Mi nombre es "+name,"_blank");
+		window.open("https://wa.me/+526623470557/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Reyna%20y%20Federico%20para%20"+number+" personas. Mi nombre es "+name,"_blank");
 		
 	
 	}
@@ -337,7 +314,7 @@
 		burgerMenu();
 		testimonialCarousel();
 		sliderMain();
-		clickMenu();
+	
 		parallax();
 		// windowScroll();
 		navigationSection();
